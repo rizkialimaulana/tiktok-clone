@@ -24,16 +24,21 @@ const Header = (props: Props) => {
           <HiSearch className="w-6 h-6 text-[#ff004c]" />
         </button>
       </div>
-      <div className="flex cursor-pointer items-center space-x-4">
-        <div className="flex items-center border border-gray-300 py-2 px-3 space-x-4">
+      <div className="flex items-center space-x-4">
+        <div className="flex cursor-pointer items-center border border-gray-300 py-2 px-3 space-x-4">
           <HiPlus />
           <span>Upload</span>
         </div>
-        <button className="bg-[#ff004c] py-2 px-5 text-white font-bold transition-all hover:bg-[#c4003b]">
+        <button className="bg-[#ff004c] cursor-pointer py-2 px-5 text-white font-bold transition-all hover:bg-[#c4003b]">
           Sign in
         </button>
         <i>
-          <HiDotsVertical />
+          <HiDotsVertical
+            className="transition-all ease-in-out"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            title="Tooltip on bottom"
+          />
         </i>
       </div>
     </div>
