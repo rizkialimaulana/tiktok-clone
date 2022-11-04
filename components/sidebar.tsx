@@ -37,36 +37,36 @@ const Sidebar = (props: Props) => {
       {/* COLL 3 */}
       <div className='flex flex-col space-y-5'>
         <span className='hidden md:inline-flex text-sm text-gray-500'>Account Suggestion</span>
-        <div className='flex flex-col space-y-3'>
-            <div className='flex items-center space-x-2'>
+        <div className='flex flex-col'>
+            <div className='flex items-center space-x-2 cursor-pointer transition-all duration-[300ms] pl-0 md:pl-3 py-3 hover:bg-gray-200'>
                 <Image src="/profile.png" alt="" className='rounded-full object-cover' width={50} height={50} />
                 <div className='hidden md:flex flex-col'>
                     <h1 className='font-bold text-md'>accont.name</h1>
                     <span className='text-gray-500 text-sm'>accountname</span>
                 </div>
             </div>
-            <div className='flex items-center space-x-2'>
+            <div className='flex items-center space-x-2 cursor-pointer transition-all duration-[300ms] pl-0 md:pl-3 py-3 hover:bg-gray-200'>
                 <Image src="/profile.png" alt="" className='rounded-full object-cover' width={50} height={50} />
                 <div className='hidden md:flex flex-col'>
                     <h1 className='font-bold text-md'>accont.name</h1>
                     <span className='text-gray-500 text-sm'>accountname</span>
                 </div>
             </div>
-            <div className='flex items-center space-x-2'>
+            <div className='flex items-center space-x-2 cursor-pointer transition-all duration-[300ms] pl-0 md:pl-3 py-3 hover:bg-gray-200'>
                 <Image src="/profile.png" alt="" className='rounded-full object-cover' width={50} height={50} />
                 <div className='hidden md:flex flex-col'>
                     <h1 className='font-bold text-md'>accont.name</h1>
                     <span className='text-gray-500 text-sm'>accountname</span>
                 </div>
             </div>
-            <div className='flex items-center space-x-2'>
+            <div className='flex items-center space-x-2 cursor-pointer transition-all duration-[300ms] pl-0 md:pl-3 py-3'>
                 <Image src="/profile.png" alt="" className='rounded-full object-cover' width={50} height={50} />
                 <div className='hidden md:flex flex-col'>
                     <h1 className='font-bold text-md'>accont.name</h1>
                     <span className='text-gray-500 text-sm'>accountname</span>
                 </div>
             </div>
-            <div className='flex items-center space-x-2'>
+            <div className='flex items-center space-x-2 cursor-pointer transition-all duration-[300ms] pl-0 md:pl-3 py-3'>
                 <Image src="/profile.png" alt="" className='rounded-full object-cover' width={50} height={50} />
                 <div className='hidden md:flex flex-col'>
                     <h1 className='font-bold text-md'>accont.name</h1>
