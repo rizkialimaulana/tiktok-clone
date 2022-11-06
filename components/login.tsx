@@ -10,7 +10,7 @@ const Login = ({close} : any) => {
     const emailRef = useRef(null)
     const passRef = useRef(null)
 
-    const register = (e) => {
+    const register = (e : any) => {
         e.preventDefault()
         createUserWithEmailAndPassword(
           auth,
