@@ -8,7 +8,8 @@ type Props = {}
 
 const Content = (props: Props) => {
   return (
-    <div className='h-screen flex-[0.9] py-5 flex flex-col space-y-10 md:space-y-0 items-center overflow-y-hidden hover:overflow-y-scroll'>
+    <div className='h-screen flex-[0.9] py-5 flex flex-col space-y-10 md:space-y-0 
+    items-center overflow-y-scroll'>
         <div className='w-[20rem] md:w-[40rem] md:min-h-full flex flex-col space-y-5'>
             <div className='flex space-x-4 items-start justify-between'>
                 <div className='flex items-start space-x-3'>
