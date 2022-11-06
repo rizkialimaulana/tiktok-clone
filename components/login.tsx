@@ -1,30 +1,16 @@
 import React, {useRef} from 'react'
 import { HiKey, HiUser, HiXCircle } from 'react-icons/hi'
-import { FaGoogle } from 'react-icons/fa'
+import { FaFacebook, FaGoogle } from 'react-icons/fa'
 import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
-import { auth, provider } from '../firebase'
+import { auth, facebook, google } from '../firebase'
 
 type Props = {}
 
 const Login = ({close} : any) => {
-    const emailRef = useRef(null)
-    const passRef = useRef(null)
+    const emailRef = useRef(document.createElement("input"));
+    const passRef = useRef(document.createElement("input"));
 
-    const register = (e : any) => {
-        e.preventDefault()
-        createUserWithEmailAndPassword(
-          auth,
-          emailRef.current.value,
-          passRef.current.value
-        )
-          .then((authUser) => {
-            console.log(authUser);
-          })
-          .catch((error) => {
-            alert(error.message);
-          });
-    }
-    const login = (e) => {
+    const login = (e : any) => {
       e.preventDefault()
       signInWithEmailAndPassword( auth, emailRef.current.value, passRef.current.value)
       .then((userAuth) => {
@@ -33,8 +19,8 @@ const Login = ({close} : any) => {
         alert(error.message)
       })
     }
-    const loginGoogle = (e) => {
-      signInWithPopup(auth, provider)
+    const loginGoogle = (e : any) => {
+      signInWithPopup(auth, google)
       .then((userAuth) => {
         console.log(userAuth)
       })

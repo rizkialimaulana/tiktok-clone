@@ -66,7 +66,9 @@ const Sidebar = (props: Props) => {
             {user ? (
               <div className="hidden md:flex flex-col">
                 <h1 className="font-bold text-md">{user.email}</h1>
-                <span className="text-gray-500 text-sm">{user.displayName}</span>
+                <span className="text-gray-500 text-sm">
+                  {user.displayName}
+                </span>
               </div>
             ) : (
               <div className="hidden md:flex flex-col">
